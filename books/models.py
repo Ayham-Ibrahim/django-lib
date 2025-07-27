@@ -17,3 +17,8 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
+    
+    
+class User(models.Model):
+    name = models.CharField(max_length=200)
+    age = models.CharField(max_length=100)
